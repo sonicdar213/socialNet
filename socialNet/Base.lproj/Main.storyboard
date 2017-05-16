@@ -79,7 +79,7 @@
                                         <rect key="frame" x="0.0" y="53" width="248" height="33"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTb-G6-hue" customClass="FancyBtn" customModule="socialNet" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="106" width="248" height="33"/>
@@ -87,6 +87,9 @@
                                         <state key="normal" title="Sign IN">
                                             <color key="titleColor" red="0.3529411764705882" green="0.49489506740196076" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="SignINPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tnU-N0-0jk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -98,6 +101,9 @@
                                     <constraint firstAttribute="height" constant="120" id="ZR4-ck-0r3"/>
                                 </constraints>
                                 <state key="normal" image="f"/>
+                                <connections>
+                                    <action selector="faceBtnpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pOi-Bc-lcP"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -119,6 +125,10 @@
                             <constraint firstAttribute="trailing" secondItem="xpn-LX-SU6" secondAttribute="trailing" id="soF-QG-dkM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailFi" destination="2LF-pC-T5x" id="04Z-HL-Ivm"/>
+                        <outlet property="passwordFi" destination="hGb-Vt-Tb2" id="d1O-5I-VRT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

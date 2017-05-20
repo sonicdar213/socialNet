@@ -23,9 +23,11 @@ class SinginVC: UIViewController {
 
             }
     override func viewDidAppear(_ animated: Bool) {
+        // checking if the user has already logged in before
         if let _ = KeychainWrapper.standard.string(forKey: Key_UID ) {
             print("JESS:ID found keychain")
-//            performSegue(withIdentifier: "GoToFeed", sender: nil)
+            performSegue(withIdentifier: "GoToFeed", sender: nil)
+          
 
         }
     }
@@ -58,7 +60,8 @@ class SinginVC: UIViewController {
             } else {
                 print("JESS:Succesfullt authenticated with Firebase")
                 if let user = user {
-                    self.completeSignin(id:user.uid)
+                    let userData = ["provider": credential.provider]
+                    self.completeSignin(id:user.uid, userData: userData)
                 }
                 
             }
@@ -71,7 +74,8 @@ class SinginVC: UIViewController {
                 if error == nil {
                     print("JESS:Email Autheticated with Firebase ")
                     if let user = user {
-                        self.completeSignin(id:user.uid)
+                        let userData = ["provider": user.providerID]
+                        self.completeSignin(id:user.uid, userData: userData)
                     }
                     
                 } else {
@@ -81,7 +85,8 @@ class SinginVC: UIViewController {
                         } else {
                             print("Succesfully authenticate Firebase using email")
                             if let user = user {
-                                self.completeSignin(id:user.uid)
+                                let userData = ["provider": user.providerID]
+                                self.completeSignin(id:user.uid, userData: userData)
                             }
                     }
                   })
@@ -89,7 +94,8 @@ class SinginVC: UIViewController {
             })
         }
     }
-    func completeSignin(id:String){
+    func completeSignin(id:String,userData:Dictionary<String,String>){
+        DataServices.ds.createFirebaseDBUser(uid: id, userDATA: userData)
         let keychainResult = KeychainWrapper.standard.set(id, forKey:Key_UID)
         print("JESS: DATA to keuchain \(keychainResult)")
         performSegue(withIdentifier: "GoToFeed", sender: nil)

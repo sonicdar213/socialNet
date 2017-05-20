@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		2B3CBF55000770ADB2AECA5A /* Pods_socialNetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094DE50890BA78A21690BA47 /* Pods_socialNetTests.framework */; };
 		B35C236796234D52D9E2713E /* Pods_socialNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8B22AC346379F76436FDFF /* Pods_socialNet.framework */; };
+		C3075EDA1ECF194100CA53BE /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3075ED91ECF194100CA53BE /* PostCell.swift */; };
 		C309CB581ECBEC1E00026820 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309CB571ECBEC1E00026820 /* Feed.swift */; };
+		C30A60F91ED0614100F2A64B /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30A60F81ED0614100F2A64B /* DataServices.swift */; };
 		C32438571EC9D4F6007D8AE0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32438531EC9D4F6007D8AE0 /* Bolts.framework */; };
 		C32438581EC9D4F6007D8AE0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32438541EC9D4F6007D8AE0 /* FBSDKCoreKit.framework */; };
 		C32438591EC9D4F6007D8AE0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C32438551EC9D4F6007D8AE0 /* FBSDKLoginKit.framework */; };
@@ -26,6 +28,7 @@
 		C36E284D1EC7FAE7001430AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C36E284C1EC7FAE7001430AE /* Assets.xcassets */; };
 		C36E28501EC7FAE7001430AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36E284E1EC7FAE7001430AE /* LaunchScreen.storyboard */; };
 		C36E285B1EC7FAE7001430AE /* socialNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36E285A1EC7FAE7001430AE /* socialNetTests.swift */; };
+		C3CD1C671ECE7BFE00A8002D /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3CD1C661ECE7BFE00A8002D /* CircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +47,9 @@
 		90C73EFD382CEFF315D569A2 /* Pods-socialNetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialNetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialNetTests/Pods-socialNetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		919B50D917F013E1E30E944F /* Pods-socialNetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialNetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialNetTests/Pods-socialNetTests.release.xcconfig"; sourceTree = "<group>"; };
 		999CFD4AACB2B5D7B501521B /* Pods-socialNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialNet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialNet/Pods-socialNet.debug.xcconfig"; sourceTree = "<group>"; };
+		C3075ED91ECF194100CA53BE /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		C309CB571ECBEC1E00026820 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		C30A60F81ED0614100F2A64B /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 		C32438531EC9D4F6007D8AE0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		C32438541EC9D4F6007D8AE0 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		C32438551EC9D4F6007D8AE0 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -66,6 +71,7 @@
 		C36E28561EC7FAE7001430AE /* socialNetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = socialNetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C36E285A1EC7FAE7001430AE /* socialNetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = socialNetTests.swift; sourceTree = "<group>"; };
 		C36E285C1EC7FAE7001430AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3CD1C661ECE7BFE00A8002D /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		D7F0E35D8D95F83CC3F73D23 /* Pods-socialNet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialNet.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialNet/Pods-socialNet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +119,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C30A60F71ED0612000F2A64B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C30A60F81ED0614100F2A64B /* DataServices.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		C32438521EC9D4BD007D8AE0 /* Frame Foder */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +161,8 @@
 				C34A7F471EC94F7800BA7C5B /* BtnRound.swift */,
 				C34A7F491EC9519900BA7C5B /* FancyTextField.swift */,
 				C34A7F4B1EC952C200BA7C5B /* FancyBtn.swift */,
+				C3CD1C661ECE7BFE00A8002D /* CircleView.swift */,
+				C3075ED91ECF194100CA53BE /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -182,6 +198,7 @@
 		C36E28441EC7FAE7001430AE /* socialNet */ = {
 			isa = PBXGroup;
 			children = (
+				C30A60F71ED0612000F2A64B /* Services */,
 				C324385F1EC9E846007D8AE0 /* socialNet.entitlements */,
 				C32438521EC9D4BD007D8AE0 /* Frame Foder */,
 				C34A7F441EC9475800BA7C5B /* Util */,
@@ -417,14 +434,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3CD1C671ECE7BFE00A8002D /* CircleView.swift in Sources */,
 				C36E28481EC7FAE7001430AE /* SinginVC.swift in Sources */,
 				C309CB581ECBEC1E00026820 /* Feed.swift in Sources */,
 				C34A7F481EC94F7800BA7C5B /* BtnRound.swift in Sources */,
 				C36E28461EC7FAE7001430AE /* AppDelegate.swift in Sources */,
+				C30A60F91ED0614100F2A64B /* DataServices.swift in Sources */,
 				C34A7F4A1EC9519900BA7C5B /* FancyTextField.swift in Sources */,
 				C34A7F431EC946D400BA7C5B /* FancyView.swift in Sources */,
 				C34A7F461EC9476B00BA7C5B /* Constant.swift in Sources */,
 				C34A7F4C1EC952C200BA7C5B /* FancyBtn.swift in Sources */,
+				C3075EDA1ECF194100CA53BE /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

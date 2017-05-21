@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2B3CBF55000770ADB2AECA5A /* Pods_socialNetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 094DE50890BA78A21690BA47 /* Pods_socialNetTests.framework */; };
 		B35C236796234D52D9E2713E /* Pods_socialNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8B22AC346379F76436FDFF /* Pods_socialNet.framework */; };
+		C3056D101ED1801300690F31 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3056D0F1ED1801300690F31 /* Post.swift */; };
 		C3075EDA1ECF194100CA53BE /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3075ED91ECF194100CA53BE /* PostCell.swift */; };
 		C309CB581ECBEC1E00026820 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C309CB571ECBEC1E00026820 /* Feed.swift */; };
 		C30A60F91ED0614100F2A64B /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30A60F81ED0614100F2A64B /* DataServices.swift */; };
@@ -47,6 +48,7 @@
 		90C73EFD382CEFF315D569A2 /* Pods-socialNetTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialNetTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialNetTests/Pods-socialNetTests.debug.xcconfig"; sourceTree = "<group>"; };
 		919B50D917F013E1E30E944F /* Pods-socialNetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialNetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-socialNetTests/Pods-socialNetTests.release.xcconfig"; sourceTree = "<group>"; };
 		999CFD4AACB2B5D7B501521B /* Pods-socialNet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-socialNet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-socialNet/Pods-socialNet.debug.xcconfig"; sourceTree = "<group>"; };
+		C3056D0F1ED1801300690F31 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C3075ED91ECF194100CA53BE /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		C309CB571ECBEC1E00026820 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		C30A60F81ED0614100F2A64B /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 		C34A7F401EC9469700BA7C5B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C3056D0F1ED1801300690F31 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				C3CD1C671ECE7BFE00A8002D /* CircleView.swift in Sources */,
 				C36E28481EC7FAE7001430AE /* SinginVC.swift in Sources */,
 				C309CB581ECBEC1E00026820 /* Feed.swift in Sources */,
+				C3056D101ED1801300690F31 /* Post.swift in Sources */,
 				C34A7F481EC94F7800BA7C5B /* BtnRound.swift in Sources */,
 				C36E28461EC7FAE7001430AE /* AppDelegate.swift in Sources */,
 				C30A60F91ED0614100F2A64B /* DataServices.swift in Sources */,

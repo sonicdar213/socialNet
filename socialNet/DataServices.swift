@@ -15,7 +15,7 @@ class DataServices {
     static let ds = DataServices()
     
     private var _REF_BASE = DB_base
-    private var _REF_POSTS = DB_base.child("posts")
+    private var _REF_POSTS = DB_base.child("post")
     private var _REF_USERS = DB_base.child("users")
     
     var REF_BASE:FIRDatabaseReference{

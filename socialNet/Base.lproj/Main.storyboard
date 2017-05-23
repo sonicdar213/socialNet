@@ -185,7 +185,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Reo-yo-gaT">
                                         <rect key="frame" x="10" y="8" width="386" height="66"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="024-yI-cFf" customClass="CircleView" customModule="socialNet" customModuleProvider="target">
+                                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-image" translatesAutoresizingMaskIntoConstraints="NO" id="024-yI-cFf" customClass="CircleView" customModule="socialNet" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="66" height="66"/>
                                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <gestureRecognizers/>
@@ -193,6 +193,9 @@
                                                     <constraint firstAttribute="height" constant="66" id="kQO-bN-Ues"/>
                                                     <constraint firstAttribute="width" constant="66" id="lkN-D7-lQr"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Hsr-5t-Efa" appends="YES" id="p3h-AB-tWP"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add a caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vzC-3e-Dvy" customClass="FancyTextField" customModule="socialNet" customModuleProvider="target">
                                                 <rect key="frame" x="76" y="0.0" width="234" height="66"/>
@@ -285,12 +288,12 @@
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOs-p3-raX">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8888" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBg-Pn-J1l">
                                                                             <rect key="frame" x="204" y="0.0" width="194" height="20.333333333333314"/>
-                                                                            <state key="normal" title="8888">
-                                                                                <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                                            </state>
-                                                                        </button>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
                                                                     </subviews>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="60" id="rPV-kH-5eP"/>
@@ -309,7 +312,7 @@
                                                     </constraints>
                                                 </view>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.84614079805072451" green="0.95686274770000002" blue="0.62016578931805488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="6Te-My-YLT" firstAttribute="leading" secondItem="J35-mP-RUn" secondAttribute="leadingMargin" id="7Lt-w2-S61"/>
                                                 <constraint firstItem="6Te-My-YLT" firstAttribute="bottom" secondItem="J35-mP-RUn" secondAttribute="bottomMargin" id="CzT-fY-xvf"/>
@@ -319,7 +322,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="caption" destination="PDU-kS-dws" id="oxd-kw-eCk"/>
-                                            <outlet property="likelbl" destination="fh7-Rk-ono" id="luK-v0-TLF"/>
+                                            <outlet property="likelbl" destination="eBg-Pn-J1l" id="Xbp-sq-OqQ"/>
                                             <outlet property="postImg" destination="YKJ-4S-YuX" id="GkX-UL-hHr"/>
                                             <outlet property="profileImg" destination="Vxf-Iw-oXO" id="dnV-lt-PBI"/>
                                             <outlet property="usernamelbl" destination="AE9-4L-6w6" id="UHV-s1-YhB"/>
@@ -343,6 +346,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addImage" destination="024-yI-cFf" id="p0B-02-CjK"/>
                         <outlet property="tableView" destination="6jj-UJ-gHy" id="lW5-Wb-pvu"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="GotoSignIN" id="tQC-E9-v99"/>
                     </connections>
@@ -351,6 +355,11 @@
                 <tapGestureRecognizer id="Qx8-Gb-BNb">
                     <connections>
                         <action selector="SignOutTapped:" destination="v0P-zw-BfT" id="qBZ-9W-POt"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Hsr-5t-Efa">
+                    <connections>
+                        <action selector="addimageTapped:" destination="v0P-zw-BfT" id="mUg-Qe-Oks"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
